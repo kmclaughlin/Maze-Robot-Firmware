@@ -71,13 +71,13 @@ void setup() {
   pinMode(R_MOTOR_ENABLE, OUTPUT);
   pinMode(LED, OUTPUT);
 
-  //chooseMazeRule();
+  chooseMazeRule();
 }
 
 void loop() {
- // if (useLeftHandRule)
- //   leftHandRule();
- // else 
+  if (useLeftHandRule)
+    leftHandRule();
+  else 
     rightHandRule();
 }
 
